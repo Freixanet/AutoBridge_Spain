@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { Shield, Lock, FileCheck, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react"
+import { getAssetPath } from "@/lib/asset-path"
 
 export const metadata = {
   title: "Garantías y Seguridad | AutoBridge - Protección Legal Completa",
@@ -28,7 +29,7 @@ export default function GuarantiasPage() {
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/premium-german-luxury-car-on-autobahn-dramatic-lig.jpg"
+            src={getAssetPath("/premium-german-luxury-car-on-autobahn-dramatic-lig.jpg")}
             alt="Security and protection"
             className="w-full h-full object-cover opacity-15"
           />
