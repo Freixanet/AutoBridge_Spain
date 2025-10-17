@@ -1,30 +1,41 @@
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { Shield, FileCheck, Lock, TrendingDown, Clock, CheckCircle2, ArrowRight, Calculator } from "lucide-react"
+import {
+  Shield,
+  FileCheck,
+  Lock,
+  TrendingDown,
+  Clock,
+  CheckCircle2,
+  ArrowRight,
+  Calculator,
+  Zap,
+  Euro,
+} from "lucide-react"
 import { HomePageSchema, ServiceSchema, FAQSchema } from "@/components/schema-markup"
 
 export const metadata = {
-  title: "Importación Premium de Coches Alemanes | TT-Core & TT-Log",
+  title: "Importación Premium de Coches Alemanes | AutoBridge - €2.200 Honorarios Fijos",
   description:
-    "Broker especializado en importación de vehículos premium y eléctricos desde Alemania a España. Inspecciones independientes, pagos en garantía y transparencia total. Ahorra hasta €8,000.",
+    "Broker especializado en importación de vehículos premium y eléctricos desde Alemania a España. Ahorra 20-30% (€5-8K). Inspecciones DEKRA, pagos en garantía, CMR incluido. €2.200 honorarios fijos, sin sorpresas.",
   keywords: [
     "importación coches alemania",
     "coches premium",
     "vehículos eléctricos",
     "broker automóvil",
-    "inspección independiente",
+    "inspección DEKRA",
     "BMW importación",
     "Mercedes importación",
     "Audi importación",
     "Tesla importación",
+    "importar coche desde alemania",
   ],
   openGraph: {
-    title: "Importación Premium de Coches Alemanes | TT-Core",
-    description: "Ahorra hasta €8,000 importando vehículos premium desde Alemania con protección legal completa",
+    title: "Importación Premium de Coches Alemanes | AutoBridge",
+    description:
+      "Ahorra 20-30% importando vehículos premium desde Alemania. €2.200 honorarios fijos, transparencia total.",
     type: "website",
     locale: "es_ES",
   },
@@ -36,8 +47,6 @@ export default function HomePage() {
       <HomePageSchema />
       <ServiceSchema />
       <FAQSchema />
-
-      <Navigation />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -54,16 +63,16 @@ export default function HomePage() {
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-secondary text-secondary-foreground" variant="secondary">
-              Legal-as-a-Feature: Inspecciones Independientes + Pagos en Garantía
+              €2.200 Honorarios Fijos • Sin Sorpresas • Transparencia Total
             </Badge>
 
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance leading-tight">
-              Importa tu coche premium desde Alemania con <span className="text-secondary">transparencia total</span>
+              Ahorra importando tu coche desde Alemania
             </h1>
 
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty leading-relaxed">
-              Ahorra hasta 8.000€ en vehículos premium y eléctricos. Inspecciones independientes, pagos en garantía y
-              seguro CMR incluido. Sin sorpresas, sin riesgos.
+              Inspecciones DEKRA independientes, pagos en garantía, seguro CMR completo y asesoramiento legal incluido.
+              Desde €5.000 a €8.000 de ahorro real en vehículos premium y eléctricos.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -79,7 +88,7 @@ export default function HomePage() {
               </Button>
               <Button asChild size="lg" variant="outline" className="text-lg px-8 bg-transparent">
                 <Link href="/contacto">
-                  Auditoría Gratuita 24h
+                  Consulta Gratuita 24h
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -96,8 +105,45 @@ export default function HomePage() {
                 <div className="text-sm text-muted-foreground">Entrega Media</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-secondary">100%</div>
-                <div className="text-sm text-muted-foreground">Transparencia</div>
+                <div className="text-3xl font-bold text-secondary">€2.2K</div>
+                <div className="text-sm text-muted-foreground">Honorarios Fijos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/5">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Euro className="h-8 w-8 text-secondary" />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Precio Fijo</h3>
+                <p className="text-muted-foreground">
+                  €2.200 honorarios fijos. Sin comisiones ocultas, sin sorpresas. Sabes exactamente qué pagas.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-secondary" />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Protección Legal</h3>
+                <p className="text-muted-foreground">
+                  Inspecciones DEKRA, escrow, CMR, VERI*FACTU. Tu dinero y tu coche protegidos en cada paso.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="h-8 w-8 text-secondary" />
+                </div>
+                <h3 className="font-semibold text-lg mb-2">Proceso Rápido</h3>
+                <p className="text-muted-foreground">
+                  12-18 días desde consulta hasta entrega. Proceso sistematizado y probado con 100+ clientes.
+                </p>
               </div>
             </div>
           </div>
@@ -120,7 +166,7 @@ export default function HomePage() {
             {/* Trust Card 1 */}
             <Card className="border-2 hover:border-secondary transition-colors">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-6 w-6 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Inspección Independiente</h3>
@@ -133,7 +179,7 @@ export default function HomePage() {
             {/* Trust Card 2 */}
             <Card className="border-2 hover:border-secondary transition-colors">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <Lock className="h-6 w-6 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Pago en Garantía</h3>
@@ -146,7 +192,7 @@ export default function HomePage() {
             {/* Trust Card 3 */}
             <Card className="border-2 hover:border-secondary transition-colors">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <FileCheck className="h-6 w-6 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Seguro CMR Completo</h3>
@@ -159,7 +205,7 @@ export default function HomePage() {
             {/* Trust Card 4 */}
             <Card className="border-2 hover:border-secondary transition-colors">
               <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <CheckCircle2 className="h-6 w-6 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">VERI*FACTU Compliant</h3>
@@ -176,9 +222,9 @@ export default function HomePage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">Proceso Simple, Resultados Garantizados</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">8 Pasos Claros, Resultados Garantizados</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              8 pasos claros desde tu consulta hasta la entrega en España
+              Desde tu consulta hasta la entrega en España en 12-18 días
             </p>
           </div>
 
@@ -345,13 +391,15 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background border-t border-border">
         <div className="container mx-auto text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">¿Listo para Importar tu Próximo Vehículo?</h2>
-          <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Recibe una auditoría gratuita en 24 horas. Sin compromiso, sin costes ocultos.
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4 text-foreground">
+            ¿Listo para Ahorrar en tu Próximo Vehículo?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Recibe una auditoría gratuita en 24 horas. Sin compromiso, sin costes ocultos. €2.200 honorarios fijos.
           </p>
-          <Button asChild size="lg" variant="secondary" className="text-lg px-8">
+          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8">
             <Link href="/contacto">
               Solicitar Auditoría Gratuita
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -359,8 +407,6 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

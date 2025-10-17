@@ -2,12 +2,12 @@ export function HomePageSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "AutoDealer",
-    name: "TT-Core",
+    name: "AutoBridge",
     description:
       "Broker especializado en importación de vehículos premium y eléctricos desde Alemania a España con protección legal completa",
-    url: "https://tt-core.es",
+    url: "https://autobridge.es",
     telephone: "+34XXXXXXXXX",
-    email: "info@tt-core.es",
+    email: "info@autobridge.es",
     address: {
       "@type": "PostalAddress",
       addressCountry: "ES",
@@ -34,7 +34,7 @@ export function ServiceSchema() {
     serviceType: "Importación de Vehículos",
     provider: {
       "@type": "Organization",
-      name: "TT-Core",
+      name: "AutoBridge",
     },
     areaServed: {
       "@type": "Country",
@@ -48,7 +48,7 @@ export function ServiceSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "TT-Core - Servicio de Intermediación",
+            name: "AutoBridge - Servicio de Intermediación",
             description: "Búsqueda, inspección, gestión de escrow y matriculación",
           },
         },
@@ -56,7 +56,7 @@ export function ServiceSchema() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "TT-Log - Servicio Logístico",
+            name: "AutoBridge Logistics - Servicio Logístico",
             description: "Transporte internacional con seguro CMR completo",
           },
         },
@@ -101,7 +101,7 @@ export function FAQSchema() {
         name: "¿Cuáles son los costes totales?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Los costes incluyen: precio del vehículo en Alemania, fee TT-Core (3%), transporte (€800-1200), inspección (€250), matriculación (€450), seguro CMR (€150). Todo se detalla en tu auditoría personalizada gratuita.",
+          text: "Los costes incluyen: precio del vehículo en Alemania, fee AutoBridge (3%), transporte (€800-1200), inspección (€250), matriculación (€450), seguro CMR (€150). Todo se detalla en tu auditoría personalizada gratuita.",
         },
       },
     ],

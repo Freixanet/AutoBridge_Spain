@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1">
-            <div className="font-serif text-2xl font-bold mb-4">TT-Core</div>
+            <div className="font-serif text-2xl font-bold mb-4">AutoBridge</div>
             <p className="text-sm text-primary-foreground/80 mb-4">
               Importación premium de vehículos desde Alemania con transparencia total.
             </p>
@@ -110,7 +110,7 @@ export function Footer() {
             <div className="mt-6">
               <h4 className="font-semibold text-sm mb-2">Contacto</h4>
               <ul className="space-y-1 text-sm text-primary-foreground/80">
-                <li>info@tt-core.es</li>
+                <li>info@autobridge.es</li>
                 <li>+34 XXX XXX XXX</li>
                 <li>L-V 9:00-18:00</li>
               </ul>
@@ -119,7 +119,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} TT-Core. Todos los derechos reservados. | VERI*FACTU Compliant</p>
+          <p>&copy; {new Date().getFullYear()} AutoBridge. Todos los derechos reservados. | VERI*FACTU Compliant</p>
         </div>
       </div>
     </footer>

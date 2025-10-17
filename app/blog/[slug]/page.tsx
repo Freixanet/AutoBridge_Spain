@@ -16,7 +16,7 @@ const blogPosts: Record<string, any> = {
     category: "Guías",
     date: "2025-01-15",
     readTime: "12 min",
-    author: "Equipo TT-Core",
+    author: "Equipo AutoBridge",
     content: `
       <h2>Introducción</h2>
       <p>Importar un vehículo desde Alemania puede suponer un ahorro significativo, especialmente en vehículos premium y eléctricos. En esta guía completa, te explicamos paso a paso todo el proceso.</p>
@@ -78,7 +78,7 @@ const blogPosts: Record<string, any> = {
       <p>Ejemplo para un vehículo de €40,000 en Alemania:</p>
       <ul>
         <li><strong>Precio vehículo:</strong> €40,000</li>
-        <li><strong>Fee TT-Core (3%):</strong> €1,200</li>
+        <li><strong>Fee AutoBridge (3%):</strong> €1,200</li>
         <li><strong>Transporte:</strong> €1,000</li>
         <li><strong>Inspección DEKRA:</strong> €250</li>
         <li><strong>Matriculación + ITV:</strong> €450</li>
@@ -132,7 +132,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${post.title} | Blog TT-Core`,
+    title: `${post.title} | Blog AutoBridge`,
     description: post.excerpt,
   }
 }
@@ -188,7 +188,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           {/* Author */}
           <div className="flex items-center gap-3 pb-8 border-b border-border mb-12">
             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              <span className="font-semibold text-primary">TT</span>
+              <span className="font-semibold text-primary">AB</span>
             </div>
             <div>
               <div className="font-medium">{post.author}</div>

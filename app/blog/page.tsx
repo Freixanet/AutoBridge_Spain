@@ -6,9 +6,16 @@ import Link from "next/link"
 import { Calendar, Clock, ArrowRight } from "lucide-react"
 
 export const metadata = {
-  title: "Blog | Guía de Importación de Coches Alemanes | TT-Core",
+  title: "Blog | Guía de Importación de Coches Alemanes | AutoBridge",
   description:
-    "Consejos, guías y noticias sobre importación de vehículos premium desde Alemania. Aprende todo sobre el proceso, costes, y mejores prácticas.",
+    "Guías completas, análisis de costes y consejos sobre importación de vehículos premium desde Alemania a España. Aprende sobre inspecciones, seguros, documentación y ahorros reales.",
+  keywords: [
+    "guía importación coches alemania",
+    "blog importación vehículos",
+    "costes importación",
+    "inspección DEKRA",
+    "seguro CMR",
+  ],
 }
 
 const blogPosts = [
@@ -16,7 +23,7 @@ const blogPosts = [
     slug: "guia-completa-importar-coche-alemania-espana",
     title: "Guía Completa: Cómo Importar un Coche desde Alemania a España en 2025",
     excerpt:
-      "Todo lo que necesitas saber sobre el proceso de importación, costes, documentación y plazos para traer tu vehículo premium desde Alemania.",
+      "Proceso paso a paso, costes reales, documentación necesaria, plazos y mejores prácticas. Todo lo que necesitas saber para importar tu vehículo premium con éxito.",
     category: "Guías",
     date: "2025-01-15",
     readTime: "12 min",
@@ -26,7 +33,7 @@ const blogPosts = [
     slug: "ahorro-real-importar-vehiculos-electricos",
     title: "¿Cuánto Puedes Ahorrar Importando un Vehículo Eléctrico desde Alemania?",
     excerpt:
-      "Análisis detallado de casos reales: BMW iX, Mercedes EQE, Audi e-tron GT. Descubre el ahorro real después de todos los costes.",
+      "Análisis detallado con casos reales: BMW iX xDrive50 (€7.200 ahorro), Mercedes EQE 350+ (€6.800), Audi e-tron GT (€8.500). Descubre el ahorro real después de todos los costes.",
     category: "Análisis",
     date: "2025-01-10",
     readTime: "8 min",
@@ -36,7 +43,7 @@ const blogPosts = [
     slug: "inspeccion-independiente-dekra-tuv-diferencias",
     title: "DEKRA vs TÜV vs GTÜ: ¿Qué Inspección Independiente Elegir?",
     excerpt:
-      "Comparativa completa de las tres principales empresas de inspección en Alemania. Costes, cobertura y qué esperar de cada una.",
+      "Comparativa completa de las tres principales empresas de inspección en Alemania. Costes, cobertura, qué se inspecciona y recomendaciones según tu tipo de vehículo.",
     category: "Legal",
     date: "2025-01-05",
     readTime: "10 min",
@@ -46,7 +53,7 @@ const blogPosts = [
     slug: "mejores-marcas-modelos-importar-alemania",
     title: "Top 10 Marcas y Modelos para Importar desde Alemania en 2025",
     excerpt:
-      "Las marcas y modelos con mejor relación calidad-precio en el mercado alemán. Desde BMW y Mercedes hasta Porsche y Tesla.",
+      "Las marcas y modelos con mejor relación calidad-precio en el mercado alemán. BMW, Mercedes, Audi, Porsche, Tesla y más. Análisis de disponibilidad y precios.",
     category: "Recomendaciones",
     date: "2024-12-28",
     readTime: "15 min",
@@ -56,7 +63,7 @@ const blogPosts = [
     slug: "seguro-cmr-transporte-internacional-coches",
     title: "Seguro CMR: Protección Total Durante el Transporte Internacional",
     excerpt:
-      "Qué cubre el seguro CMR, diferencias entre ICC(A) y SRCC, y por qué es fundamental para proteger tu inversión durante el transporte.",
+      "Qué cubre el seguro CMR, diferencias entre ICC(A) y SRCC, cómo funciona la cobertura y por qué es fundamental para proteger tu inversión durante el transporte.",
     category: "Legal",
     date: "2024-12-20",
     readTime: "7 min",
@@ -66,11 +73,71 @@ const blogPosts = [
     slug: "matriculacion-itv-importacion-espana-guia",
     title: "Matriculación e ITV de Importación: Guía Paso a Paso",
     excerpt:
-      "Todo sobre el proceso de matriculación en la DGT, ITV de importación, documentación necesaria y plazos. Sin complicaciones.",
+      "Todo sobre el proceso de matriculación en la DGT, ITV de importación, documentación necesaria, plazos y costes. Proceso simplificado sin complicaciones.",
     category: "Guías",
     date: "2024-12-15",
     readTime: "11 min",
     image: "/blog/matriculacion.jpg",
+  },
+  {
+    slug: "costes-reales-importacion-desglose-completo",
+    title: "Costes Reales de Importación: Desglose Completo de Todos los Gastos",
+    excerpt:
+      "Transporte, inspección, seguros, documentación, impuestos. Desglose detallado de cada coste. Cómo AutoBridge mantiene los costes transparentes con €2.200 honorarios fijos.",
+    category: "Análisis",
+    date: "2024-12-10",
+    readTime: "9 min",
+    image: "/blog/costes-desglose.jpg",
+  },
+  {
+    slug: "veri-factu-compliance-importacion-coches",
+    title: "VERI*FACTU: Cumplimiento Fiscal en Importación de Coches",
+    excerpt:
+      "Qué es VERI*FACTU, por qué es importante, cómo afecta a tu importación y cómo AutoBridge garantiza el cumplimiento total con la normativa fiscal española.",
+    category: "Legal",
+    date: "2024-12-05",
+    readTime: "8 min",
+    image: "/blog/veri-factu.jpg",
+  },
+  {
+    slug: "errores-comunes-importar-coche-alemania",
+    title: "10 Errores Comunes al Importar un Coche desde Alemania (y Cómo Evitarlos)",
+    excerpt:
+      "Errores que cometen los importadores novatos: no inspeccionar, no asegurar, documentación incompleta, negociar mal. Cómo evitar cada uno.",
+    category: "Consejos",
+    date: "2024-11-30",
+    readTime: "10 min",
+    image: "/blog/errores-comunes.jpg",
+  },
+  {
+    slug: "mercado-coches-alemania-tendencias-2025",
+    title: "Mercado de Coches Alemanes en 2025: Tendencias y Oportunidades",
+    excerpt:
+      "Análisis del mercado actual: precios, disponibilidad, tendencias en vehículos eléctricos, demanda de marcas premium. Mejor momento para importar.",
+    category: "Análisis",
+    date: "2024-11-25",
+    readTime: "12 min",
+    image: "/blog/mercado-tendencias.jpg",
+  },
+  {
+    slug: "pago-garantia-escrow-como-funciona",
+    title: "Pago en Garantía (Escrow): Cómo Funciona y Por Qué es Importante",
+    excerpt:
+      "Explicación completa del sistema de escrow. Cómo protege tu dinero, cuándo se libera, qué pasa si hay problemas y por qué es fundamental en importaciones.",
+    category: "Legal",
+    date: "2024-11-20",
+    readTime: "7 min",
+    image: "/blog/escrow.jpg",
+  },
+  {
+    slug: "financiacion-importacion-coches-opciones",
+    title: "Opciones de Financiación para Importar tu Coche desde Alemania",
+    excerpt:
+      "Cómo financiar tu importación: créditos bancarios, leasing, financiación de concesionarios. Ventajas y desventajas de cada opción.",
+    category: "Consejos",
+    date: "2024-11-15",
+    readTime: "9 min",
+    image: "/blog/financiacion.jpg",
   },
 ]
 
@@ -85,7 +152,8 @@ export default function BlogPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-4">Blog de Importación</h1>
             <p className="text-lg text-muted-foreground">
-              Guías, consejos y análisis sobre importación de vehículos premium desde Alemania
+              Guías completas, análisis de costes y consejos sobre importación de vehículos premium desde Alemania.
+              Aprende todo sobre inspecciones, seguros, documentación y ahorros reales.
             </p>
           </div>
         </div>

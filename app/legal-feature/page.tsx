@@ -76,7 +76,7 @@ export default function LegalFeaturePage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-secondary">
                   <CheckCircle2 className="h-5 w-5" />
-                  Con TT-Core
+                  Con AutoBridge
                 </CardTitle>
               </CardHeader>
               <CardContent>

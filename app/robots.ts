@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://tt-core.es/sitemap.xml",
+    sitemap: "https://autobridge.es/sitemap.xml",
   }
 }

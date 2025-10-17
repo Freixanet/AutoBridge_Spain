@@ -3,8 +3,8 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata = {
-  title: "Política de Privacidad | TT-Core",
-  description: "Política de privacidad y protección de datos personales de TT-Core",
+  title: "Política de Privacidad | AutoBridge",
+  description: "Política de privacidad y protección de datos personales de AutoBridge",
 }
 
 export default function PrivacidadPage() {
@@ -24,9 +24,9 @@ export default function PrivacidadPage() {
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
                 <p>
-                  <strong>Identidad:</strong> TT-Core
+                  <strong>Identidad:</strong> AutoBridge
                   <br />
-                  <strong>Email:</strong> info@tt-core.es
+                  <strong>Email:</strong> info@autobridge.es
                   <br />
                   <strong>Actividad:</strong> Broker de importación de vehículos desde Alemania a España
                 </p>
@@ -166,7 +166,7 @@ export default function PrivacidadPage() {
                   </li>
                 </ul>
                 <p>
-                  Para ejercer tus derechos, contacta con nosotros en <strong>info@tt-core.es</strong>
+                  Para ejercer tus derechos, contacta con nosotros en <strong>info@autobridge.es</strong>
                 </p>
               </CardContent>
             </Card>
@@ -210,7 +210,7 @@ export default function PrivacidadPage() {
                   Para cualquier consulta sobre esta política de privacidad o el tratamiento de tus datos personales:
                 </p>
                 <p>
-                  <strong>Email:</strong> info@tt-core.es
+                  <strong>Email:</strong> info@autobridge.es
                 </p>
                 <p>
                   Si consideras que tus derechos no han sido atendidos adecuadamente, puedes presentar una reclamación

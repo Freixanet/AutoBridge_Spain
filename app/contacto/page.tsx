@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Badge } from "@/components/ui/badge"
-import { Mail, Phone, Clock, MapPin, Send, CheckCircle2, User, Building2, Store } from "lucide-react"
+import { Mail, Phone, Clock, MapPin, Send, CheckCircle2, User, Building2, Store, Euro } from "lucide-react"
 import { useState } from "react"
 
 type ClientType = "particular" | "empresa" | "dealer"
@@ -63,7 +63,7 @@ export default function ContactoPage() {
             <h1 className="font-serif text-4xl font-bold mb-4">¡Solicitud Recibida!</h1>
             <p className="text-lg text-muted-foreground mb-8">
               Gracias por tu interés. Nuestro equipo revisará tu solicitud y te contactará en menos de 24 horas con tu
-              auditoría personalizada.
+              auditoría personalizada y estimación de ahorro real.
             </p>
             <div className="bg-muted/50 rounded-lg p-6 mb-8">
               <h3 className="font-semibold mb-4">Próximos Pasos:</h3>
@@ -106,14 +106,15 @@ export default function ContactoPage() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto text-center">
           <Badge className="mb-6 bg-secondary text-secondary-foreground" variant="secondary">
-            Respuesta en 24h
+            <Euro className="h-4 w-4 mr-2" />
+            €2.200 Honorarios Fijos • Respuesta en 24h
           </Badge>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Solicita Tu Auditoría Gratuita
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
             Cuéntanos qué vehículo buscas y te enviaremos un análisis detallado con estimación de ahorro real en menos
-            de 24 horas
+            de 24 horas. Sin compromiso, sin costes ocultos.
           </p>
         </div>
       </section>
@@ -134,8 +135,11 @@ export default function ContactoPage() {
                     <Mail className="h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
                     <div>
                       <div className="font-medium text-sm mb-1">Email</div>
-                      <a href="mailto:info@tt-core.es" className="text-sm text-muted-foreground hover:text-secondary">
-                        info@tt-core.es
+                      <a
+                        href="mailto:info@autobridge.es"
+                        className="text-sm text-muted-foreground hover:text-secondary"
+                      >
+                        info@autobridge.es
                       </a>
                     </div>
                   </div>
@@ -174,7 +178,7 @@ export default function ContactoPage() {
                     </div>
                   </div>
 
-                  <div className="pt-6 border-t">
+                  <div className="pt-6 border-t space-y-3">
                     <div className="bg-secondary/10 rounded-lg p-4">
                       <div className="flex items-center gap-2 mb-2">
                         <CheckCircle2 className="h-5 w-5 text-secondary" />
@@ -182,6 +186,16 @@ export default function ContactoPage() {
                       </div>
                       <p className="text-xs text-muted-foreground">
                         Te contactaremos en menos de 24 horas laborables con tu auditoría personalizada
+                      </p>
+                    </div>
+
+                    <div className="bg-secondary/10 rounded-lg p-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Euro className="h-5 w-5 text-secondary" />
+                        <span className="font-semibold text-sm">Precio Fijo</span>
+                      </div>
+                      <p className="text-xs text-muted-foreground">
+                        €2.200 honorarios fijos. Sin sorpresas, sin costes ocultos.
                       </p>
                     </div>
                   </div>
@@ -421,7 +435,7 @@ export default function ContactoPage() {
                           onCheckedChange={(checked) => handleInputChange("marketingConsent", checked as boolean)}
                         />
                         <Label htmlFor="marketing" className="text-sm leading-relaxed cursor-pointer">
-                          Acepto recibir comunicaciones comerciales sobre ofertas y novedades de TT-Core (opcional)
+                          Acepto recibir comunicaciones comerciales sobre ofertas y novedades de AutoBridge (opcional)
                         </Label>
                       </div>
 
@@ -467,9 +481,9 @@ export default function ContactoPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Análisis de mercado DE vs ES, estimación de ahorro real, viabilidad de importación, presupuesto
-                  detallado con todos los costes (transporte, inspección, matriculación, seguros) y recomendaciones
-                  personalizadas.
+                  Análisis de mercado DE vs ES, estimación de ahorro real (20-30%), viabilidad de importación,
+                  presupuesto detallado con todos los costes (transporte, inspección, matriculación, seguros) y
+                  recomendaciones personalizadas según tu perfil.
                 </p>
               </CardContent>
             </Card>
@@ -480,8 +494,8 @@ export default function ContactoPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  No. La auditoría es completamente gratuita y sin compromiso. Solo pagas si decides proceder con la
-                  importación y firmamos el contrato de intermediación.
+                  No. La auditoría es completamente gratuita y sin compromiso. Solo pagas €2.200 si decides proceder con
+                  la importación y firmamos el contrato de intermediación.
                 </p>
               </CardContent>
             </Card>

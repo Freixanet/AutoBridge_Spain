@@ -15,7 +15,7 @@ export default function EmpresaPage() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto text-center">
           <Badge className="mb-6 bg-secondary text-secondary-foreground" variant="secondary">
-            Sobre TT-Core
+            Sobre AutoBridge
           </Badge>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Broker Especializado en Importación Premium
@@ -105,8 +105,13 @@ export default function EmpresaPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Transparencia en Costes</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Fee fijo del 3% en TT-Core y markup transparente del 12-18% en TT-Log. Sin sorpresas, sin costes
-                      ocultos. Sabes exactamente qué pagas y por qué.
+                      <span className="line-through">
+                        Fee fijo del 3% en TT-Core y markup transparente del 12-18% en TT-Log.
+                      </span>{" "}
+                      <span className="font-semibold">
+                        Fee fijo del 3% en AutoBridge y markup transparente del 12-18% en AutoBridge Logistics.
+                      </span>{" "}
+                      Sin sorpresas, sin costes ocultos. Sabes exactamente qué pagas y por qué.
                     </p>
                   </div>
                 </div>
@@ -148,7 +153,7 @@ export default function EmpresaPage() {
             <CardContent className="pt-6">
               <div className="prose prose-sm max-w-none text-muted-foreground">
                 <p className="leading-relaxed mb-4">
-                  TT-Core está formado por un equipo multidisciplinar con experiencia en el sector automovilístico,
+                  AutoBridge está formado por un equipo multidisciplinar con experiencia en el sector automovilístico,
                   logística internacional y asesoría legal. Nuestros especialistas conocen en profundidad tanto el
                   mercado alemán como la normativa española de importación.
                 </p>

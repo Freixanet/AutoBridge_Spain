@@ -3,8 +3,8 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata = {
-  title: "Política de Cookies | TT-Core",
-  description: "Información sobre el uso de cookies en TT-Core",
+  title: "Política de Cookies | AutoBridge",
+  description: "Información sobre el uso de cookies en AutoBridge",
 }
 
 export default function CookiesPage() {
@@ -169,7 +169,7 @@ export default function CookiesPage() {
               <CardContent className="prose prose-sm max-w-none">
                 <p>Si tienes preguntas sobre nuestra política de cookies, contacta con nosotros:</p>
                 <p>
-                  <strong>Email:</strong> info@tt-core.es
+                  <strong>Email:</strong> info@autobridge.es
                 </p>
               </CardContent>
             </Card>

@@ -174,22 +174,22 @@ export default function FAQPage() {
             </div>
 
             {/* Still Have Questions CTA */}
-            <div className="mt-16 bg-secondary rounded-lg p-8 md:p-12 text-center">
+            <div className="mt-16 bg-primary text-primary-foreground rounded-lg p-8 md:p-12 text-center">
               <h2 className="font-serif text-2xl md:text-3xl font-bold mb-4">¿No encuentras tu respuesta?</h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto text-pretty">
+              <p className="text-primary-foreground/90 mb-6 max-w-2xl mx-auto text-pretty">
                 Nuestro equipo está disponible para resolver cualquier duda específica sobre tu caso. Respuesta
                 garantizada en menos de 24 horas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contacto"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-semibold hover:bg-secondary/90 transition-colors"
                 >
                   Contactar con un Experto
                 </Link>
                 <Link
                   href="/calculadoras"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-background text-foreground rounded-lg font-semibold hover:bg-background/90 transition-colors border border-primary-foreground/20"
                 >
                   Calcular mi Ahorro
                 </Link>

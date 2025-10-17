@@ -3,8 +3,8 @@ import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export const metadata = {
-  title: "Términos y Condiciones | TT-Core",
-  description: "Términos y condiciones de uso de los servicios de TT-Core",
+  title: "Términos y Condiciones | AutoBridge",
+  description: "Términos y condiciones de uso de los servicios de AutoBridge",
 }
 
 export default function TerminosPage() {
@@ -24,8 +24,9 @@ export default function TerminosPage() {
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
                 <p>
-                  Al acceder y utilizar los servicios de TT-Core, aceptas estar sujeto a estos términos y condiciones.
-                  Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar nuestros servicios.
+                  Al acceder y utilizar los servicios de AutoBridge, aceptas estar sujeto a estos términos y
+                  condiciones. Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar nuestros
+                  servicios.
                 </p>
               </CardContent>
             </Card>
@@ -36,8 +37,8 @@ export default function TerminosPage() {
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
                 <p>
-                  TT-Core ofrece servicios de intermediación (brokerage) para la importación de vehículos desde Alemania
-                  a España, incluyendo:
+                  AutoBridge ofrece servicios de intermediación (brokerage) para la importación de vehículos desde
+                  Alemania a España, incluyendo:
                 </p>
                 <ul>
                   <li>Búsqueda y localización de vehículos en el mercado alemán</li>
@@ -68,10 +69,10 @@ export default function TerminosPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle>4. Obligaciones de TT-Core</CardTitle>
+                <CardTitle>4. Obligaciones de AutoBridge</CardTitle>
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
-                <p>TT-Core se compromete a:</p>
+                <p>AutoBridge se compromete a:</p>
                 <ul>
                   <li>Actuar con diligencia profesional en la búsqueda y selección de vehículos</li>
                   <li>Coordinar inspecciones técnicas independientes por entidades certificadas</li>
@@ -88,13 +89,13 @@ export default function TerminosPage() {
                 <CardTitle>5. Estructura de Precios</CardTitle>
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
-                <h3 className="font-semibold mt-4 mb-2">TT-Core (Servicio de Intermediación)</h3>
+                <h3 className="font-semibold mt-4 mb-2">AutoBridge (Servicio de Intermediación)</h3>
                 <ul>
                   <li>Fee fijo del 3% sobre el precio de compra del vehículo</li>
                   <li>Incluye: búsqueda, inspección, gestión de escrow, trámites fiscales y matriculación</li>
                 </ul>
 
-                <h3 className="font-semibold mt-4 mb-2">TT-Log (Servicio Logístico)</h3>
+                <h3 className="font-semibold mt-4 mb-2">AutoBridge Logistics (Servicio Logístico)</h3>
                 <ul>
                   <li>Coste base de transporte + markup del 12-18%</li>
                   <li>Incluye: transporte, seguro CMR, gestión aduanera</li>
@@ -117,7 +118,7 @@ export default function TerminosPage() {
                   </li>
                   <li>
                     <strong>Después de inspección negativa:</strong> Cancelación gratuita, coste de inspección a cargo
-                    de TT-Core
+                    de AutoBridge
                   </li>
                   <li>
                     <strong>Después de inspección positiva:</strong> Cancelación posible con retención del 50% del fee
@@ -125,7 +126,7 @@ export default function TerminosPage() {
                   </li>
                   <li>
                     <strong>Después de compra confirmada:</strong> No reembolsable, salvo incumplimiento por parte de
-                    TT-Core
+                    AutoBridge
                   </li>
                 </ul>
               </CardContent>
@@ -151,7 +152,7 @@ export default function TerminosPage() {
                 </p>
                 <ul>
                   <li>
-                    TT-Core actúa como intermediario y no es responsable de defectos ocultos no detectados en la
+                    AutoBridge actúa como intermediario y no es responsable de defectos ocultos no detectados en la
                     inspección
                   </li>
                   <li>Las garantías del fabricante o vendedor son independientes de nuestro servicio</li>
@@ -166,11 +167,11 @@ export default function TerminosPage() {
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
                 <p>
-                  La responsabilidad de TT-Core está limitada al importe total pagado por el cliente por nuestros
+                  La responsabilidad de AutoBridge está limitada al importe total pagado por el cliente por nuestros
                   servicios, excepto en casos de negligencia grave o dolo.
                 </p>
                 <p>
-                  TT-Core no será responsable de daños indirectos, lucro cesante o pérdidas consecuenciales derivadas
+                  AutoBridge no será responsable de daños indirectos, lucro cesante o pérdidas consecuenciales derivadas
                   del uso de nuestros servicios.
                 </p>
               </CardContent>
@@ -213,7 +214,7 @@ export default function TerminosPage() {
               </CardHeader>
               <CardContent className="prose prose-sm max-w-none">
                 <p>
-                  TT-Core se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Los
+                  AutoBridge se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Los
                   cambios entrarán en vigor tras su publicación en el sitio web.
                 </p>
                 <p>
@@ -230,7 +231,7 @@ export default function TerminosPage() {
               <CardContent className="prose prose-sm max-w-none">
                 <p>Para cualquier consulta sobre estos términos y condiciones:</p>
                 <p>
-                  <strong>Email:</strong> info@tt-core.es
+                  <strong>Email:</strong> info@autobridge.es
                   <br />
                   <strong>Teléfono:</strong> +34 XXX XXX XXX
                 </p>

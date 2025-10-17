@@ -1,7 +1,5 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import { Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
@@ -19,7 +17,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Importación Premium de Coches Alemanes | TT-Core & TT-Log",
+  title: "Importación Premium de Coches Alemanes | AutoBridge",
   description:
     "Broker especializado en importación de vehículos premium y eléctricos desde Alemania a España. Inspecciones independientes, pagos en garantía y transparencia total.",
   generator: "v0.app",
@@ -42,7 +40,7 @@ export default function RootLayout({
       <head>
         <AnalyticsWrapper />
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable} antialiased`}>
+      <body className={`font-sans ${playfair.variable} antialiased`}>
         <Navigation />
         <main className="pt-16">
           <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>

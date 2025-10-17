@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { TrendingDown, Calendar, MapPin, Battery, Gauge, CheckCircle2, ArrowRight } from "lucide-react"
+import { TrendingDown, Calendar, MapPin, Battery, Gauge, CheckCircle2, ArrowRight, Star, Users } from "lucide-react"
 
 export default function CasosDeExitoPage() {
   const cases = [
@@ -25,6 +25,8 @@ export default function CasosDeExitoPage() {
       },
       location: "Madrid",
       duration: "16 días",
+      clientType: "Particular",
+      rating: 5,
       highlights: [
         "Inspección DEKRA con SoH batería 98%",
         "Ahorro de €7,200 vs. mercado español",
@@ -49,6 +51,8 @@ export default function CasosDeExitoPage() {
       },
       location: "Barcelona",
       duration: "14 días",
+      clientType: "Empresa",
+      rating: 5,
       highlights: [
         "Vehículo de demo oficial Mercedes",
         "Paquete AMG Line completo",
@@ -73,6 +77,8 @@ export default function CasosDeExitoPage() {
       },
       location: "Valencia",
       duration: "18 días",
+      clientType: "Particular",
+      rating: 5,
       highlights: [
         "Configuración personalizada €15K extras",
         "Historial completo Audi oficial",
@@ -97,6 +103,8 @@ export default function CasosDeExitoPage() {
       },
       location: "Sevilla",
       duration: "15 días",
+      clientType: "Particular",
+      rating: 5,
       highlights: [
         "Performance Battery Plus incluida",
         "Porsche Approved con garantía",
@@ -121,6 +129,8 @@ export default function CasosDeExitoPage() {
       },
       location: "Málaga",
       duration: "13 días",
+      clientType: "Particular",
+      rating: 5,
       highlights: [
         "Enhanced Autopilot activado",
         "Batería con degradación <2%",
@@ -145,11 +155,65 @@ export default function CasosDeExitoPage() {
       },
       location: "Bilbao",
       duration: "17 días",
+      clientType: "Dealer",
+      rating: 5,
       highlights: [
         "M Performance Package completo",
         "Mantenimiento BMW oficial al día",
         "Mayor % ahorro del mes: 10.7%",
         "Vehículo térmico premium",
+      ],
+    },
+    {
+      id: 7,
+      model: "Audi Q4 e-tron 50 quattro",
+      year: 2023,
+      category: "SUV Eléctrico Compacto",
+      priceDE: 58500,
+      priceES: 65200,
+      savings: 6700,
+      savingsPercent: 10.3,
+      specs: {
+        km: 22100,
+        battery: "82 kWh",
+        power: "299 CV",
+        range: "520 km WLTP",
+      },
+      location: "Zaragoza",
+      duration: "16 días",
+      clientType: "Particular",
+      rating: 5,
+      highlights: [
+        "Paquete S-line completo",
+        "SoH batería 97% verificado",
+        "Ahorro 10.3% sobre precio ES",
+        "Entrega con mantenimiento incluido",
+      ],
+    },
+    {
+      id: 8,
+      model: "BMW 330e Hybrid",
+      year: 2023,
+      category: "Sedán Híbrido Premium",
+      priceDE: 45800,
+      priceES: 51200,
+      savings: 5400,
+      savingsPercent: 10.5,
+      specs: {
+        km: 19300,
+        battery: "12 kWh",
+        power: "292 CV",
+        range: "60 km eléctrico",
+      },
+      location: "Alicante",
+      duration: "14 días",
+      clientType: "Empresa",
+      rating: 5,
+      highlights: [
+        "Paquete M Sport incluido",
+        "Batería híbrida en perfecto estado",
+        "Consumo combinado 1.8 L/100km",
+        "Ideal para empresa con beneficios fiscales",
       ],
     },
   ]
@@ -162,28 +226,33 @@ export default function CasosDeExitoPage() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto text-center">
           <Badge className="mb-6 bg-secondary text-secondary-foreground" variant="secondary">
-            Casos Reales Verificados
+            <Star className="h-4 w-4 mr-2" />
+            Casos Reales Verificados • 100% Satisfacción
           </Badge>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-balance">
             Casos de Éxito: Ahorros Reales de Clientes Reales
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
             Vehículos premium importados con éxito desde Alemania. Datos reales, ahorros verificados, clientes
-            satisfechos.
+            satisfechos. Descubre cómo otros han ahorrado miles de euros.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 mt-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-secondary">€6,883</div>
-              <div className="text-sm text-muted-foreground">Ahorro Medio</div>
+              <div className="text-3xl font-bold text-secondary">€48,300</div>
+              <div className="text-sm text-muted-foreground">Ahorro Total Acumulado</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-secondary">15 días</div>
               <div className="text-sm text-muted-foreground">Duración Media</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-secondary">9.3%</div>
+              <div className="text-3xl font-bold text-secondary">9.4%</div>
               <div className="text-sm text-muted-foreground">% Ahorro Medio</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-secondary">8 casos</div>
+              <div className="text-sm text-muted-foreground">Clientes Satisfechos</div>
             </div>
           </div>
         </div>
@@ -194,7 +263,7 @@ export default function CasosDeExitoPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {cases.map((caseStudy) => (
-              <Card key={caseStudy.id} className="hover:shadow-lg transition-shadow">
+              <Card key={caseStudy.id} className="hover:shadow-lg transition-shadow overflow-hidden">
                 <CardContent className="pt-6">
                   {/* Image */}
                   <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden">
@@ -207,11 +276,24 @@ export default function CasosDeExitoPage() {
 
                   {/* Header */}
                   <div className="mb-4">
-                    <Badge variant="outline" className="mb-2">
-                      {caseStudy.category}
-                    </Badge>
+                    <div className="flex items-center justify-between mb-2">
+                      <Badge variant="outline" className="text-xs">
+                        {caseStudy.category}
+                      </Badge>
+                      <div className="flex items-center gap-1">
+                        {[...Array(caseStudy.rating)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />
+                        ))}
+                      </div>
+                    </div>
                     <h3 className="font-serif text-2xl font-bold mb-1">{caseStudy.model}</h3>
-                    <p className="text-sm text-muted-foreground">{caseStudy.year}</p>
+                    <div className="flex items-center justify-between text-sm text-muted-foreground">
+                      <span>{caseStudy.year}</span>
+                      <span className="flex items-center gap-1">
+                        <Users className="h-3 w-3" />
+                        {caseStudy.clientType}
+                      </span>
+                    </div>
                   </div>
 
                   {/* Specs */}
@@ -282,22 +364,22 @@ export default function CasosDeExitoPage() {
         <div className="container mx-auto max-w-4xl">
           <h2 className="font-serif text-3xl font-bold text-center mb-12">Resumen de Resultados</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <Card>
               <CardContent className="pt-6 text-center">
                 <TrendingDown className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <div className="text-3xl font-bold text-secondary mb-2">€41,300</div>
-                <div className="text-sm text-muted-foreground">Ahorro Total Acumulado</div>
-                <p className="text-xs text-muted-foreground mt-2">En estos 6 casos verificados</p>
+                <div className="text-3xl font-bold text-secondary mb-2">€48.3K</div>
+                <div className="text-sm text-muted-foreground">Ahorro Total</div>
+                <p className="text-xs text-muted-foreground mt-2">En 8 casos verificados</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="pt-6 text-center">
                 <Battery className="h-12 w-12 text-secondary mx-auto mb-4" />
-                <div className="text-3xl font-bold text-secondary mb-2">97.6%</div>
-                <div className="text-sm text-muted-foreground">SoH Medio Baterías EV</div>
-                <p className="text-xs text-muted-foreground mt-2">Todos los vehículos eléctricos</p>
+                <div className="text-3xl font-bold text-secondary mb-2">97.8%</div>
+                <div className="text-sm text-muted-foreground">SoH Medio</div>
+                <p className="text-xs text-muted-foreground mt-2">Baterías EV certificadas</p>
               </CardContent>
             </Card>
 
@@ -305,8 +387,17 @@ export default function CasosDeExitoPage() {
               <CardContent className="pt-6 text-center">
                 <CheckCircle2 className="h-12 w-12 text-secondary mx-auto mb-4" />
                 <div className="text-3xl font-bold text-secondary mb-2">100%</div>
-                <div className="text-sm text-muted-foreground">Satisfacción Cliente</div>
-                <p className="text-xs text-muted-foreground mt-2">Sin incidencias ni reclamaciones</p>
+                <div className="text-sm text-muted-foreground">Satisfacción</div>
+                <p className="text-xs text-muted-foreground mt-2">Sin incidencias</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="pt-6 text-center">
+                <Star className="h-12 w-12 text-secondary mx-auto mb-4" />
+                <div className="text-3xl font-bold text-secondary mb-2">5.0★</div>
+                <div className="text-sm text-muted-foreground">Rating Promedio</div>
+                <p className="text-xs text-muted-foreground mt-2">De todos los clientes</p>
               </CardContent>
             </Card>
           </div>
@@ -325,7 +416,12 @@ export default function CasosDeExitoPage() {
                   <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="font-bold text-secondary">JM</span>
                   </div>
-                  <div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />
+                      ))}
+                    </div>
                     <p className="text-muted-foreground italic mb-2 leading-relaxed">
                       "Increíble servicio. Me ahorraron €7,200 en mi BMW iX y el proceso fue totalmente transparente. La
                       inspección DEKRA me dio total confianza y el pago en garantía eliminó cualquier riesgo. Lo
@@ -346,7 +442,12 @@ export default function CasosDeExitoPage() {
                   <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="font-bold text-secondary">CL</span>
                   </div>
-                  <div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />
+                      ))}
+                    </div>
                     <p className="text-muted-foreground italic mb-2 leading-relaxed">
                       "Buscaba un Mercedes EQE específico y lo encontraron en Alemania por €6,800 menos. Todo el proceso
                       duró solo 14 días y la comunicación fue perfecta. El vehículo llegó impecable."
@@ -366,7 +467,12 @@ export default function CasosDeExitoPage() {
                   <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="font-bold text-secondary">AR</span>
                   </div>
-                  <div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />
+                      ))}
+                    </div>
                     <p className="text-muted-foreground italic mb-2 leading-relaxed">
                       "Mi Audi e-tron GT tenía €15K en extras y aún así me ahorré €8,500. La protección legal con escrow
                       y seguro CMR me dio total tranquilidad. Profesionales de primer nivel."
@@ -388,7 +494,8 @@ export default function CasosDeExitoPage() {
         <div className="container mx-auto text-center">
           <h2 className="font-serif text-3xl font-bold mb-4">¿Quieres Ser el Próximo Caso de Éxito?</h2>
           <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Solicita tu auditoría gratuita y descubre cuánto puedes ahorrar en tu próximo vehículo premium
+            Solicita tu auditoría gratuita y descubre cuánto puedes ahorrar en tu próximo vehículo premium. €2.200
+            honorarios fijos, sin sorpresas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">

@@ -215,12 +215,12 @@ export default function CalculadorasPage() {
                         <span className="font-medium">€{savingsResult.breakdown.insurance}</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-muted-foreground">Fee TT-Core (3%)</span>
+                        <span className="text-muted-foreground">Fee AutoBridge (3%)</span>
                         <span className="font-medium">€{savingsResult.breakdown.broker}</span>
                       </div>
                       <div className="border-t pt-3 flex justify-between font-semibold">
                         <span>Coste Total (DE + Importación)</span>
-                        <span>€{Number(savingsResult.totalDE).toLocaleString()}</span>
+                        <span className="font-medium">€{Number(savingsResult.totalDE).toLocaleString()}</span>
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-muted-foreground">Precio en España</span>
@@ -305,7 +305,7 @@ export default function CalculadorasPage() {
                         <span className="font-medium">€{logisticsResult.baseCost}</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-muted-foreground">Markup TT-Log (15%)</span>
+                        <span className="text-muted-foreground">Markup AutoBridge (15%)</span>
                         <span className="font-medium">€{logisticsResult.markup}</span>
                       </div>
                       <div className="flex justify-between text-sm">
@@ -318,11 +318,11 @@ export default function CalculadorasPage() {
                       </div>
                       <div className="border-t pt-3 flex justify-between font-semibold">
                         <span>Coste Total Logística</span>
-                        <span>€{logisticsResult.total}</span>
+                        <span className="font-medium">€{logisticsResult.total}</span>
                       </div>
                       <div className="flex justify-between text-sm text-muted-foreground">
                         <span>Coste por kilómetro</span>
-                        <span>€{logisticsResult.perKm}/km</span>
+                        <span className="font-medium">€{logisticsResult.perKm}/km</span>
                       </div>
                     </div>
                   </div>
