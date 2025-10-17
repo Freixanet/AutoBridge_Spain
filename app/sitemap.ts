@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next"
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://autobridge.es"
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://freixanet.github.io/AutoBridge_Spain"
 
   return [
     {
