@@ -83,6 +83,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          NEXT_PUBLIC_USE_STATIC_NEWSLETTER: 'true'
       - name: Add .nojekyll file
         run: touch ./out/.nojekyll
       - name: Upload artifact

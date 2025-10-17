@@ -17,7 +17,18 @@ export function NewsletterForm() {
     setStatus("loading")
 
     try {
-      // TODO: Integrate with your email service (Mailchimp, SendGrid, Resend, etc.)
+      // For static GitHub Pages deployment, use mailto as a fallback
+      // In production with a backend, replace this with your email service integration
+      if (process.env.NEXT_PUBLIC_USE_STATIC_NEWSLETTER === 'true') {
+        window.location.href = `mailto:info@autobridge.es?subject=Newsletter Subscription&body=Email: ${encodeURIComponent(email)}`
+        setStatus("success")
+        trackFormSubmission("newsletter", "subscriber")
+        setEmail("")
+        setTimeout(() => setStatus("idle"), 5000)
+        return
+      }
+
+      // Original API route (for non-static deployments)
       const response = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
