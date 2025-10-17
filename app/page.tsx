@@ -15,6 +15,7 @@ import {
   Euro,
 } from "lucide-react"
 import { HomePageSchema, ServiceSchema, FAQSchema } from "@/components/schema-markup"
+import { getAssetPath } from "@/lib/asset-path"
 
 export const metadata = {
   title: "Importación Premium de Coches Alemanes | AutoBridge - €2.200 Honorarios Fijos",
@@ -53,7 +54,7 @@ export default function HomePage() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/premium-german-luxury-car-on-autobahn-dramatic-lig.jpg"
+            src={getAssetPath("/premium-german-luxury-car-on-autobahn-dramatic-lig.jpg")}
             alt="Premium German vehicle"
             className="w-full h-full object-cover opacity-20"
           />

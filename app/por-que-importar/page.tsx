@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { TrendingDown, Zap, Shield, Globe, DollarSign, Gauge, ArrowRight, CheckCircle2 } from "lucide-react"
+import { getAssetPath } from "@/lib/asset-path"
 
 export const metadata = {
   title: "Por qué Importar Coches desde Alemania | AutoBridge",
@@ -27,7 +28,7 @@ export default function WhyImportPage() {
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/premium-german-luxury-car-on-autobahn-dramatic-lig.jpg"
+            src={getAssetPath("/premium-german-luxury-car-on-autobahn-dramatic-lig.jpg")}
             alt="German automotive market"
             className="w-full h-full object-cover opacity-15"
           />
