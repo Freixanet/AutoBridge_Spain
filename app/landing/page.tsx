@@ -9,20 +9,7 @@ import { FAQSection } from "@/components/landing/faq-section"
 import { FinalCTASection } from "@/components/landing/final-cta-section"
 import { LandingFooter } from "@/components/landing/landing-footer"
 
-export const metadata = {
-  title: "AutoBridge | Importa tu Coche desde Alemania - Ahorra hasta €8.000",
-  description:
-    "Importación profesional de vehículos desde Alemania a España. €2.200 honorarios fijos. Inspección DEKRA, pago escrow, seguro CMR incluido. Ahorra 20-30% en tu próximo coche.",
-  keywords: [
-    "importar coche alemania",
-    "importación vehículos alemania españa",
-    "broker coches alemania",
-    "comprar coche alemania",
-    "ahorrar coche importado",
-  ],
-}
-
-export default function HomePage() {
+export default function LandingPage() {
   return (
     <main className="min-h-screen">
       <HeroSection />

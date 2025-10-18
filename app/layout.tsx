@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Playfair_Display } from "next/font/google"
+import { Inter, Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
@@ -10,23 +10,29 @@ import { CookieBanner } from "@/components/cookie-banner"
 import { AnalyticsWrapper } from "@/components/analytics-wrapper"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
-const playfair = Playfair_Display({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-sans",
+  display: "swap",
+})
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-heading",
   display: "swap",
 })
 
 export const metadata: Metadata = {
-  title: "Importación Premium de Coches Alemanes | AutoBridge",
+  title: "AutoBridge | Importa tu Coche desde Alemania - Ahorra hasta €8.000",
   description:
-    "Broker especializado en importación de vehículos premium y eléctricos desde Alemania a España. Inspecciones independientes, pagos en garantía y transparencia total.",
+    "Importación profesional de vehículos desde Alemania a España. €2.200 honorarios fijos. Inspección DEKRA, pago escrow, seguro CMR incluido.",
   generator: "v0.app",
   keywords: [
-    "importación coches alemania",
-    "coches premium",
-    "vehículos eléctricos",
-    "broker automóvil",
-    "inspección independiente",
+    "importar coche alemania",
+    "importación vehículos alemania españa",
+    "broker coches alemania",
+    "comprar coche alemania",
   ],
 }
 
@@ -36,15 +42,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <AnalyticsWrapper />
       </head>
-      <body className={`font-sans ${playfair.variable} antialiased`}>
+      <body className="font-sans antialiased">
         <Navigation />
-        <main className="pt-16">
-          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
-        </main>
+        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Footer />
         <CookieBanner />
         <WhatsAppButton />

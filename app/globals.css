@@ -4,80 +4,82 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Premium automotive broker color palette inspired by design references */
-  --background: oklch(0.98 0.005 85); /* Warm off-white */
-  --foreground: oklch(0.25 0.01 260); /* Deep charcoal navy */
-  --card: oklch(1 0 0); /* Pure white for cards */
-  --card-foreground: oklch(0.25 0.01 260);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.01 260);
-  --primary: oklch(0.28 0.04 260); /* Deep navy blue - trust & automotive */
-  --primary-foreground: oklch(0.98 0.005 85);
-  --secondary: oklch(0.35 0.08 155); /* Deep forest green - success/savings */
-  --secondary-foreground: oklch(0.98 0.005 85);
-  --muted: oklch(0.94 0.005 85); /* Light warm gray */
-  --muted-foreground: oklch(0.5 0.01 260);
-  --accent: oklch(0.65 0.15 85); /* Warm gold accent - premium */
-  --accent-foreground: oklch(0.25 0.01 260);
-  --destructive: oklch(0.55 0.22 25);
-  --destructive-foreground: oklch(0.98 0.005 85);
-  --border: oklch(0.88 0.005 85);
-  --input: oklch(0.88 0.005 85);
-  --ring: oklch(0.28 0.04 260);
-  --chart-1: oklch(0.35 0.08 155); /* Green for savings */
-  --chart-2: oklch(0.28 0.04 260); /* Navy for costs */
-  --chart-3: oklch(0.65 0.15 85); /* Gold for premium */
-  --chart-4: oklch(0.5 0.12 200); /* Blue accent */
-  --chart-5: oklch(0.45 0.1 30); /* Warm red for warnings */
+  /* Nueva paleta de colores para landing page optimizada */
+  --background: #ffffff;
+  --foreground: #1e293b;
+  --card: #ffffff;
+  --card-foreground: #1e293b;
+  --popover: #ffffff;
+  --popover-foreground: #1e293b;
+  --primary: #0a2463; /* Azul profundo - confianza, profesionalidad */
+  --primary-foreground: #ffffff;
+  --secondary: #10b981; /* Verde - ahorro, éxito */
+  --secondary-foreground: #ffffff;
+  --accent: #ff6b35; /* Naranja - urgencia, acción */
+  --accent-foreground: #ffffff;
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0a2463;
+  --chart-1: #10b981;
+  --chart-2: #0a2463;
+  --chart-3: #ff6b35;
+  --chart-4: #3b82f6;
+  --chart-5: #8b5cf6;
   --radius: 0.5rem;
-  --sidebar: oklch(0.98 0.005 85);
-  --sidebar-foreground: oklch(0.25 0.01 260);
-  --sidebar-primary: oklch(0.28 0.04 260);
-  --sidebar-primary-foreground: oklch(0.98 0.005 85);
-  --sidebar-accent: oklch(0.94 0.005 85);
-  --sidebar-accent-foreground: oklch(0.25 0.01 260);
-  --sidebar-border: oklch(0.88 0.005 85);
-  --sidebar-ring: oklch(0.28 0.04 260);
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1e293b;
+  --sidebar-primary: #0a2463;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f8fafc;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #0a2463;
 }
 
 .dark {
-  --background: oklch(0.18 0.01 260);
-  --foreground: oklch(0.98 0.005 85);
-  --card: oklch(0.22 0.01 260);
-  --card-foreground: oklch(0.98 0.005 85);
-  --popover: oklch(0.22 0.01 260);
-  --popover-foreground: oklch(0.98 0.005 85);
-  --primary: oklch(0.65 0.15 85);
-  --primary-foreground: oklch(0.18 0.01 260);
-  --secondary: oklch(0.45 0.12 155);
-  --secondary-foreground: oklch(0.98 0.005 85);
-  --muted: oklch(0.28 0.01 260);
-  --muted-foreground: oklch(0.7 0.01 85);
-  --accent: oklch(0.65 0.15 85);
-  --accent-foreground: oklch(0.18 0.01 260);
-  --destructive: oklch(0.45 0.18 25);
-  --destructive-foreground: oklch(0.98 0.005 85);
-  --border: oklch(0.28 0.01 260);
-  --input: oklch(0.28 0.01 260);
-  --ring: oklch(0.65 0.15 85);
-  --chart-1: oklch(0.45 0.12 155);
-  --chart-2: oklch(0.5 0.12 260);
-  --chart-3: oklch(0.65 0.15 85);
-  --chart-4: oklch(0.55 0.15 200);
-  --chart-5: oklch(0.5 0.15 30);
-  --sidebar: oklch(0.22 0.01 260);
-  --sidebar-foreground: oklch(0.98 0.005 85);
-  --sidebar-primary: oklch(0.65 0.15 85);
-  --sidebar-primary-foreground: oklch(0.18 0.01 260);
-  --sidebar-accent: oklch(0.28 0.01 260);
-  --sidebar-accent-foreground: oklch(0.98 0.005 85);
-  --sidebar-border: oklch(0.28 0.01 260);
-  --sidebar-ring: oklch(0.65 0.15 85);
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --popover: #1e293b;
+  --popover-foreground: #f8fafc;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #34d399;
+  --secondary-foreground: #0f172a;
+  --accent: #fb923c;
+  --accent-foreground: #0f172a;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --destructive: #dc2626;
+  --destructive-foreground: #f8fafc;
+  --border: #334155;
+  --input: #334155;
+  --ring: #3b82f6;
+  --chart-1: #34d399;
+  --chart-2: #3b82f6;
+  --chart-3: #fb923c;
+  --chart-4: #60a5fa;
+  --chart-5: #a78bfa;
+  --sidebar: #1e293b;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #334155;
+  --sidebar-ring: #3b82f6;
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Configurando fuentes Inter y Poppins */
+  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
+  --font-heading: var(--font-poppins), "Poppins", system-ui, -apple-system, sans-serif;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -88,10 +90,10 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -122,5 +124,58 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Agregando clases de tipografía para la landing page */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.text-display {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.text-h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.text-body-lg {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .text-display {
+    font-size: 2.5rem;
+  }
+
+  .text-h1 {
+    font-size: 2rem;
+  }
+
+  .text-h2 {
+    font-size: 1.75rem;
   }
 }
